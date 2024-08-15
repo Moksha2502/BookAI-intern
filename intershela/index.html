@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>BookAi</title>
+</head>
+<body>
+  <div class="menu_bar">
+    <h1>
+      <img src="https://raw.githubusercontent.com/adarshagupta/trybookai/main/logo.png" alt="BookAi Logo" class="logo">
+      BOOKAI
+    </h1>
+    <ul>
+      <li><a href="#Features">Features</a></li>
+      <li><a href="#How it Works">How It Works</a></li>
+      <li><a href="#Roadmap">Roadmap</a></li>
+      <li><a href="#API">API</a></li>
+      <li><a href="#Price">Price</a></li>
+      <li><a href="#Models">Models</a></li>
+      <li><button type="button" class="login_btn">Login/Sign Up</button></li>
+    </ul>
+  </div>
+
+  <div id="Features" class="center-content">
+    <h2>Explore the Possibilities of <span class="highlighted-text">AI Book Writing</span> with BookAI.</h2>
+    <p>Unleash the power of AI to create captivating books in minutes.</p>
+    <p>Download, Distribute wherever you want. Generate unlimited free books</p>
+    
+    <div class="button-group">
+      <button class="get_started_btn">Get Started</button>
+      <button class="get_app_access_btn">Get App Access</button>
+    </div>
+  </div>
+
+  <div id="particles-js"></div>
+
+  <div id="Price" class="price-section">
+    <div class="gallery-intro">
+      <h2>API Pricing</h2>
+      <p>Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
+    </div>
+    <div class="gallery">
+      <div class="row">
+        <div class="gallery-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2oCrmjAGJ9o3i_wjM4d4paXk0cSHvOcPhg&s" alt="Image 1">
+          <div class="price">$0.002 Price per 1K tokens</div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div class="gallery-item">
+          <img src="https://th.bing.com/th/id/OIP.L270kfF090lmiryxHqJG_AHaEJ?rs=1&pid=ImgDetMain" alt="Image 2">
+          <div class="price">$0.03 Price per 1K tokens</div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div class="gallery-item">
+          <img src="https://th.bing.com/th/id/OIP.7w8GpC5Hj1pES0pzxTY-xwHaD4?rs=1&pid=ImgDetMain" alt="Image 3">
+          <div class="price">$0.0008 Price per 1K tokens</div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div class="gallery-item">
+          <img src="https://th.bing.com/th/id/OIP._kQsrk_dGcq_sV6Au1maTgHaD4?w=326&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 4">
+          <div class="price">$0.0006 Price per 1K tokens</div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="token-estimation">
+      <h2>Token Estimation</h2>
+      <p>On average, 1 token is approximately 4 characters or 0.75 words. For precise pricing, we recommend using our token calculator tool.</p>
+      <h2>Billing</h2>
+      <p>You will only be charged for the tokens used in generating the book. The API tracks token usage and bills accordingly. Detailed usage reports are available in your account dashboard.</p>
+    </div>
+  </div>
+
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>

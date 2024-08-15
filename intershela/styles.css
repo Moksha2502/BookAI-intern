@@ -1,0 +1,240 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(45deg, #2c3e50, #34495e, #2c3e50, #34495e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: white;
+}
+
+.menu_bar {
+  background-color:rgba(0,0,0,0.7);
+
+  height: 70px;
+  width: 90%;
+  max-width: 1400px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  z-index: 1000;
+}
+
+.menu_bar h1 {
+  margin: 0;
+  flex: 1;
+}
+
+.logo {
+  height: 50px; 
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 60px; 
+  align-items: center;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white; 
+  padding: 10px 15px; 
+  display: block;
+}
+
+a:hover {
+  background-color:powderblue;
+  color: blue;
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.login_btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.login_btn:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+.center-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px; 
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.center-content h2 {
+  margin-bottom: 30px; 
+  font-size: 40px; 
+}
+
+.center-content p {
+  margin-bottom: 5px; 
+  font-size: 22px; 
+}
+
+.highlighted-text {
+  color: #FF5733;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.get_started_btn, .get_app_access_btn {
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  padding: 15px 25px; /* Increased padding */
+  font-size: 20px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.get_started_btn:hover, .get_app_access_btn:hover {
+  background-color: #E74C3C;
+  transform: scale(1.1);
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.price-section{
+ min-height: 80vh; 
+  padding: 100px 20px 50px;
+  background: linear-gradient(45deg, #2c3e50, #34495e, #2c3e50, #34495e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/004/447/751/non_2x/abstract-pink-fluid-wave-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-intro h2 {
+  color: white;
+}
+
+.gallery-intro p {
+  font-size: 1.2em; 
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery .row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.gallery-item {
+  text-align: center;
+}
+
+
+.price {
+  font-size: 18px;
+  color: #FF5733;
+  margin: 10px 0;
+}
+
+.card_btn {
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card_btn:hover {
+  background-color: #E74C3C;
+  transform: scale(1.1);
+}
+
+.gallery-item img {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.token-estimation {
+  margin-top: 20px;
+  text-align: left;
+}
+.token-estimation h2, 
+.token-estimation p {
+  margin-left: 10px;
+font-size: 1.2em;
+}
+
+
